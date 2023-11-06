@@ -4,7 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "vite build && vite build --ssr",
+    "init": "rm -rf node_modules/@remix-run/dev/dist && cp -r @remix-run/dev/dist/ node_modules/@remix-run/dev/",
+    "clean": "rm -rf build && rm -rf public/build",
+    "build": "npm run clean && npm run init && vite build && vite build --ssr",
     "dev": "vite dev",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
