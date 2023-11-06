@@ -5,6 +5,11 @@ export default defineConfig({
   plugins: [
     remix({
       ignoredRouteFiles: ["**/.*"],
+      serverModuleFormat: "cjs",
+      // appDirectory: "app",
+      // assetsBuildDirectory: "public/build",
+      // publicPath: "/build/",
+      serverBuildPath: "build/index.cjs",
     }),
   ],
 });
