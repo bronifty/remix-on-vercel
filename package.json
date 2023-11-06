@@ -20,7 +20,8 @@
     "isbot": "^3.6.8",
     "parse-multipart-data": "^1.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "undici": "^5.27.2"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.2.0",
